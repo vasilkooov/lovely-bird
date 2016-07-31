@@ -1,0 +1,155 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0; }
+
+h1 {
+  color: #c3bfbf;
+  font-weight: 300;
+  font-size: 3em;
+  margin: 32px 0; }
+
+.content article {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center; }
+.content p {
+  color: #5f5e5d; }
+
+.img {
+  max-width: 100%; }
+
+.bird-box {
+  position: relative;
+  height: 600px;
+  background-image: url(../img/forest-bg.jpg);
+  background-size: auto 980px;
+  background-position: top center;
+  background-attachment: fixed;
+  overflow: hidden; }
+
+.logo {
+  height: 100px;
+  width: 100%;
+  background-image: url(../img/logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px; }
+
+.fore-bird {
+  width: 550px;
+  height: 300px;
+  background-image: url(../img/bird.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  position: absolute;
+  left: 50%;
+  margin-left: 145px;
+  top: 350px; }
+
+.back-heart {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 50%;
+  bottom: 150px;
+  margin-left: -20px;
+  background-image: url(../img/back.png);
+  background-repeat: no-repeat;
+  background-position: top center; }
+
+.anime-btn {
+  display: block;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  position: fixed;
+  top: 68%;
+  right: 15%;
+  background: url(../img/back.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  transition: all 0.2s ease-out; }
+  .anime-btn:hover {
+    transform: scale(1.1); }
+
+.photos {
+  margin-bottom: 80px; }
+  .photos figure {
+    margin-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer; }
+    .photos figure img {
+      display: block;
+      border-radius: 4px;
+      height: 370px;
+      opacity: 0;
+      transform: -webkit-translateX(30px);
+      transition: all 0.8s ease-in-out;
+      transform: scale(1); }
+      .photos figure img.is-showing {
+        opacity: 1; }
+    .photos figure:hover figcaption {
+      left: 0; }
+    .photos figure:hover img {
+      transform: scale(1.1); }
+  .photos figcaption {
+    position: absolute;
+    border-radius: 0 2px 2px 0;
+    bottom: 20px;
+    left: -280px;
+    background: pink;
+    color: white;
+    padding: 10px 42px;
+    font-size: 16px;
+    transition: left 0.4s ease-out; }
+
+.large-window {
+  width: 560px;
+  height: 560px;
+  background-image: url(../img/1foto3.jpg);
+  background-size: 975px 560px;
+  background-position: center 0px;
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+  margin: 100px auto 0;
+  border-radius: 50%;
+  position: relative; }
+  .large-window .window-tint {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .large-window .promo-text {
+    color: white;
+    font-weight: 100;
+    font-size: 50px;
+    line-height: 1.2; }
+    .large-window .promo-text strong {
+      display: block;
+      font-size: 30px; }
+    .large-window .promo-text span {
+      font-weight: 300;
+      font-size: 18px;
+      font-style: italic;
+      color: rgba(255, 255, 255, 0.6); }
+    .large-window .promo-text .window-cta {
+      font-size: 20px;
+      text-decoration: none;
+      color: white;
+      border: 1px solid white;
+      padding: 10px 20px;
+      transition: all 0.3s ease-in-out; }
+      .large-window .promo-text .window-cta:hover {
+        background: white;
+        color: black; }
+
+/*# sourceMappingURL=all.css.map */

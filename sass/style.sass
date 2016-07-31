@@ -1,0 +1,199 @@
+body 
+	font-family: "Open Sans", sans-serif
+	margin: 0
+
+h1
+	color: #c3bfbf
+	font-weight: 300
+	font-size: 3em
+	margin: 32px 0	
+	
+.content
+	article
+		
+		max-width: 640px
+		margin: 0 auto
+		text-align: center
+
+	p
+		color: #5f5e5d	
+
+.img
+	max-width: 100%
+
+.bird-box 
+	position: relative
+	height: 600px
+	background: 
+		image: url(../img/forest-bg.jpg)
+		size: auto 980px
+		position: top center
+		attachment: fixed
+	overflow: hidden
+
+.logo 
+	height: 100px 
+	width: 100%
+	background: 
+		image: url(../img/logo.png)	
+		position: center	
+		repeat: no-repeat
+	position: absolute
+	top: 50%
+	margin-top: -50px
+
+.fore-bird
+	width: 550px
+	height: 300px
+	background:
+		image: url(../img/bird.png)
+		repeat: no-repeat
+		position: right bottom
+
+	position: absolute
+	left: 50%
+	margin-left: 145px
+	top: 350px
+
+.back-heart
+	width: 50px
+	height: 50px
+	position: absolute
+	left: 50%
+	bottom: 150px
+	margin-left: -20px
+
+	background: 
+		image: url(../img/back.png)
+		repeat: no-repeat
+		position: top center
+
+
+//animate heart
+.anime-btn
+
+	display: block
+	width: 45px
+	height: 45px
+	border-radius: 50%
+
+	position: fixed
+	top: 68%
+	right: 15%
+	background: url(../img/back.png)
+		repeat: no-repeat
+		position: 50% 50%
+		
+		
+	transition: all .2s ease-out
+
+	&:hover
+		transform: scale(1.1)
+		
+// Fotooo
+.photos
+	margin-bottom: 80px
+
+	figure
+		margin-bottom: 10px
+		position: relative
+		overflow: hidden
+
+		cursor: pointer
+	
+		img
+			display: block
+			border-radius: 4px
+			height: 370px
+			opacity: 0
+			
+			transform: -webkit-translateX(30px)
+			transition: all .8s ease-in-out
+
+			&.is-showing
+				opacity: 1
+				
+
+			transform: scale(1)	
+
+		&:hover	
+			figcaption
+				left: 0
+			img
+				transform: scale(1.1)	
+
+
+	figcaption
+		position: absolute
+		border-radius: 0 2px 2px 0
+		bottom: 20px
+		left: -280px		
+		background: pink
+
+
+
+		color: white
+		padding: 10px 42px
+		font-size: 16px
+
+		transition: left .4s ease-out
+
+	
+// large=windowie no
+
+.large-window
+	
+	width: 560px
+	height: 560px
+	background:
+		image: url(../img/1foto3.jpg)
+		size: 975px 560px
+		position: center 0px
+		repeat: repeat-y
+	background-attachment: fixed 
+		
+	margin: 100px auto 0
+	border-radius: 50%
+	position: relative
+	
+	.window-tint
+		background-color: rgba(0,0,0,0.5)
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		border-radius: 50%
+		display: flex
+		justify-content: center
+		align-items: center
+	
+	.promo-text
+		color: white
+		font-weight: 100
+		font-size: 50px
+		line-height: 1.2
+
+
+		strong
+			display: block
+			font-size: 30px
+
+		span
+			font:
+				weight: 300
+				size: 18px
+				style: italic
+			color: rgba(255,255,255,.6)
+			
+		.window-cta
+			font-size: 20px
+			text-decoration: none
+			color: white
+			border: 1px solid white
+			padding: 10px 20px
+			transition: all 0.3s ease-in-out
+
+			&:hover
+				background: white 
+				color: black
